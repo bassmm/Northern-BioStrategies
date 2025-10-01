@@ -2,6 +2,7 @@
 import Contactform from "@/components/contactform.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
+import Button from "@/components/ui/button.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 ---
@@ -10,34 +11,48 @@ import { Icon } from "astro-icon/components";
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
+      <Fragment slot="desc">Here's where you can reach us.</Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
         <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
+          Have something to say?
         </p>
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1734 Sanfransico, CA 93063</span>
+            <span>Leeds, UK</span>
           </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:hello@astroshipstarter.com"
-              >hello@astroshipstarter.com</a
+              href="mailto:northernbiostrategies@gmail.com"
+              >northernbiostrategies@gmail.com</a
             >
           </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
+            <Icon class="text-gray-400 w-4 h-4" name="uil:instagram" /><a
+              href="https://www.instagram.com/northernbiostrategies"
+              >Northern BioStrategies</a
+            >
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:linkedin" /><a
+              href="https://www.linkedin.com/company/northern-biostrategies/"
+              >Northern BioStrategies</a
             >
           </div>
         </div>
       </div>
       <div>
-        <Contactform />
+        <h2 class="font-medium text-2xl text-gray-800 text-center mt-5">
+          Join the Team
+        </h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3 text-center">
+          Gain consulting experience through real-world biotech analysis.
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfJbx9aPYBf9yGb5qkfymiNNQxd3xCijsHi_VXCW3pdj42-CA/viewform?usp=header"
+          ><Button class="mt-6 ml-38">Apply Now</Button>
+        </a>
       </div>
     </div>
   </Container>
